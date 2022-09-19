@@ -25,10 +25,10 @@ git clone https://github.com/IrinaPolt/api_yamdb.git
 cd api_yamdb
 ```
 
-Cоздать и активировать виртуальное окружение:
+2. Cоздать и активировать виртуальное окружение:
 
 ```bash
-python3 -m venv env
+python -m venv venv
 ```
 Linux и MacOS:
 ```bash
@@ -36,26 +36,37 @@ source env/bin/activate
 ```
 Windows:
 ```
-source env/Scripts/activate
+source venv/Scripts/activate
 ```
-Установить зависимости из файла requirements.txt:
+3. Установить зависимости из файла requirements.txt:
 
 ```bash
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+4. Выполнить миграции:
 
 ```bash
-python3 manage.py migrate
+python manage.py migrate
 ```
 
-Запустить проект:
+5. Запустить проект:
 
 ```bash
-python3 manage.py runserver
+python manage.py runserver
 ```
+## Системные требования
+
+django==2.2.16
+djangorestframework==3.12.4
+requests==2.26.0
+PyJWT==2.1.0
+pytest==6.2.4
+pytest-django==4.4.0
+pytest-pythonpath==0.7.3
+djangorestframework-simplejwt==5.2.0
+django-filter==21.1
