@@ -61,12 +61,22 @@ python manage.py runserver
 ```
 ## Системные требования
 
+python==3.7.0
+
 django==2.2.16
+
 djangorestframework==3.12.4
+
 requests==2.26.0
+
 PyJWT==2.1.0
+
 pytest==6.2.4
+
 pytest-django==4.4.0
+
 pytest-pythonpath==0.7.3
+
 djangorestframework-simplejwt==5.2.0
+
 django-filter==21.1
